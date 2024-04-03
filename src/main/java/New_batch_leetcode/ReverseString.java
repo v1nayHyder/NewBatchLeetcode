@@ -3,6 +3,7 @@ package New_batch_leetcode;
 import java.util.Arrays;
 
 public class ReverseString {
+
     public static void main(String[] args) {
         String name="Vinay Prakash Yadav";
         char chars[]=name.toCharArray();
