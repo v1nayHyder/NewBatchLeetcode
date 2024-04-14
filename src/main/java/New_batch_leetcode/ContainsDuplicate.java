@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class ContainsDuplicate {
     public static void main(String[] args) {
-        int nums[]={1,2,3,4};
+        int nums[]={1,2,3,1};
 
      boolean check=containsDuplicate(nums);
         System.out.println(check);
@@ -15,11 +15,11 @@ public class ContainsDuplicate {
     // bruth force algorithms
     public  static boolean containsDuplicate(int[] nums) {
 //
-        Arrays.sort(nums);
-        for (int j = 0; j <nums.length-1; j++) {
-                if (nums[j]==nums[j+1]){
-                    return true;
-                }
+//        Arrays.sort(nums);
+//        for (int j = 0; j <nums.length-1; j++) {
+//                if (nums[j]==nums[j+1]){
+//                    return true;
+//                }
 
 //        for (int i = 0; i <nums.length ; i++) {
 //            if (set.contains(nums[i])){
@@ -32,8 +32,15 @@ public class ContainsDuplicate {
 //                    return true;
 //                }
 //            }
+        Set set=new HashSet<>();
+        for (int num:nums) {
+            if(set.contains(num))
+                return true;
+            set.add(num);
 
         }
+
+
         return false;
     }
 }
