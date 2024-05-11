@@ -15,7 +15,7 @@ public class ContainDuplicate1 {
     }
 
     public static void main(String[] args) {
-            int[] nums={1,2,4,3,};
+             int[] nums={1,2,4,3,};
         boolean result=isDuplicate(nums);
         System.out.println(result);
     }
