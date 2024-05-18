@@ -10,6 +10,7 @@ public class GroupAnagram {
      * @return A list of lists of strings, where each sublist contains anagrams.
      */
     public static List<List<String>> groupAnagrams(String[] strs) {
+        //Total time and space complexity
         // Time Complexity: O(N * K * log K)
         // - N is the number of strings.
         // - K is the maximum length of a string.
