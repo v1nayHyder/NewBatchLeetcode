@@ -1,6 +1,7 @@
 package New_batch_leetcode;
 
 public class Search2dMatrix {
+
         public static boolean searchMatrix(int[][] matrix, int target) {
            //Time Complexity: O(n + m). In the worst case, you might traverse the whole height and width of the matrix.
             //Space Complexity: O(1). The space used by the algorithm does not depend on the size of the input matrix.
