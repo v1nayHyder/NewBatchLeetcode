@@ -53,6 +53,7 @@ Time Complexity Analysis:
             if (lastSeen[0] != -1 && lastSeen[1] != -1 && lastSeen[2] != -1) { // O(1) time
                 count += 1 + Math.min(lastSeen[0], Math.min(lastSeen[1], lastSeen[2])); // O(1) time
             }
+
         }
         return count; // O(1) time
     }
