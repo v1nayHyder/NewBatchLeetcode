@@ -49,9 +49,12 @@ public class ReplacementEle {
                 System.out.print(arr[i]+" ");
                 max=val;
             }
-            else if (max!=arr[i]&&max>arr[i]){
+            else {
                 arr[i]=max;
             }
+//            else if (max!=arr[i]&&max>arr[i]){
+//                arr[i]=max;
+//            }
 
         }
         return arr;
