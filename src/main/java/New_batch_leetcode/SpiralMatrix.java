@@ -40,4 +40,5 @@ public class SpiralMatrix {
         System.out.println(list);
 
     }
+
 }
