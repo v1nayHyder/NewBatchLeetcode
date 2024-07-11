@@ -34,34 +34,36 @@ public class FindCommonChar {
 //    return List[null];
 //    }
 
-//    public static List<String> commonChars(String[] words) {
-//        List<String> strings=new ArrayList<>();
-//        for (int i=0;i<words[0].length();i++) {
-//            boolean check = false;
-//            for (int j = 1; j < words.length; j++) {
-//                check = false;
-//                label1:
-//                for (int k = 0; k < words[0].length(); k++) {
-//                    if (words[0].charAt(i) == words[j].charAt(k)) {
-//                        check = true;
-//                        break label1;
-//                    }
-//                }
-//
-//            }
-//            if (check){
-//                System.out.println(words[0].charAt(i));
-//                if (!strings.contains(Character.toString(words[0].charAt(i)))) {
-//                    strings.add(Character.toString(words[0].charAt(i)));
-//                }
-//        }// Add the common character to the list
-//
-//        }
-//      return  strings;
-//
-//    }
+    public static List<String> commonChars(String[] words) {
+        List<String> strings=new ArrayList<>();
+        for (int i=0;i<words[0].length();i++) {
+            boolean check = false;
+            for (int j = 1; j < words.length; j++) {
+                check = false;
+                label1:
+                for (int k = 0; k < words[0].length(); k++) {
+                    if (words[0].charAt(i) == words[j].charAt(k)) {
+                        check = true;
+//                        words[j].substring(k,k+1)
+                        break label1;
+
+                    }
+                }
+
+            }
+                if (check){
+                System.out.println(words[0].charAt(i));
+                if (!strings.contains(Character.toString(words[0].charAt(i)))) {
+                    strings.add(Character.toString(words[0].charAt(i)));
+                }
+        }// Add the common character to the list
+
+        }
+      return  strings;
+
+    }
     public static void main(String[] args) {
-     String words[]={"cool","lock","cook"};
-//        System.out.println(commonChars(words));
+     String words[]={"bella","label","roller"};
+        System.out.println(commonChars(words));
     }
 }
