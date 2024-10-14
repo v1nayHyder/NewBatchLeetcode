@@ -62,6 +62,6 @@ public class DivideArrayPairs {
     public static void main(String[] args) {
         // Test case
         // Expected output: false
-        System.out.println(divideArray(new int[]{1, 2, 3, 4}));
+        System.out.println(divideArray(new int[]{2, 2, 3, 3}));
     }
 }

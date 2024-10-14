@@ -46,13 +46,27 @@ Time Complexity Analysis:
 - Returning the count: O(1)
 
          */
-        int lastSeen[] = {-1, -1, -1}; // O(1) space
+//        int lastSeen[] = {-1, -1, -1}; // O(1) space
+//        int count = 0; // O(1) space
+//        for (int i = 0; i < s.length(); i++) { // O(n) time, where n is the length of the string
+//            lastSeen[s.charAt(i) - 'a'] = i; // O(1) time
+//            if (lastSeen[0] != -1 && lastSeen[1] != -1 && lastSeen[2] != -1) { // O(1) time
+//                count += 1 + Math.min(lastSeen[0], Math.min(lastSeen[1], lastSeen[2])); // O(1) time
+//            }
+//
+//        }
+//        return count; // O(1) time
+//    }
+        int lastSeen[] = new int[3]; // O(1) space
         int count = 0; // O(1) space
+        int start=0;
         for (int i = 0; i < s.length(); i++) { // O(n) time, where n is the length of the string
-            lastSeen[s.charAt(i) - 'a'] = i; // O(1) time
-            if (lastSeen[0] != -1 && lastSeen[1] != -1 && lastSeen[2] != -1) { // O(1) time
-                count += 1 + Math.min(lastSeen[0], Math.min(lastSeen[1], lastSeen[2])); // O(1) time
-            }
+            lastSeen[s.charAt(i) - 'a']++; // O(1) time
+
+         while (lastSeen[0]>=1&&lastSeen[1]>=1&&lastSeen[2]>=1){
+             count+=(s.length()-i);
+             lastSeen[s.charAt(start++)-'a']--;
+         }
 
         }
         return count; // O(1) time
