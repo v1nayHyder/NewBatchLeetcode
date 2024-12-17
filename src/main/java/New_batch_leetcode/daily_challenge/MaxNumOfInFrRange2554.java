@@ -1,10 +1,5 @@
 package New_batch_leetcode.daily_challenge;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
-
 public class MaxNumOfInFrRange2554 {
     public static int maxCount(int[] banned, int n, int maxSum) {
         HashSet<Integer> set=new HashSet<>();
