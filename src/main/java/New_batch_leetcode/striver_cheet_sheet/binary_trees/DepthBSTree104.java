@@ -1,20 +1,16 @@
 package New_batch_leetcode.striver_cheet_sheet.binary_trees;
 
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
-
 public class DepthBSTree104 {
     public static void main(String[] args) {
-        TreeNode root=new TreeNode(3);
-        root.left=new TreeNode(9);
-        root.right=new TreeNode(20);
-        root.right.left=new TreeNode(15);
-        root.right.right=new TreeNode(7);
+        TreeNode1 root=new TreeNode1(3);
+        root.left=new TreeNode1(9);
+        root.right=new TreeNode1(20);
+        root.right.left=new TreeNode1(15);
+        root.right.right=new TreeNode1(7);
         System.out.println(maxDepth(root));
     }
 
-    public static int maxDepth(TreeNode root) {
+    public static int maxDepth(TreeNode1 root) {
         if(root==null)
             return 0;
         int leftHight=maxDepth(root.left);
@@ -50,8 +46,8 @@ public class DepthBSTree104 {
 }
 class TreeNode{
        int val;
-       TreeNode left;
-       TreeNode right;
+       TreeNode1 left;
+       TreeNode1 right;
        TreeNode(int val){
            this.val=val;
            left=right=null;

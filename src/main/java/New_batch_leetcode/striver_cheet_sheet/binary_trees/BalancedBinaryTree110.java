@@ -4,19 +4,19 @@ package New_batch_leetcode.striver_cheet_sheet.binary_trees;
 
 public class BalancedBinaryTree110 {
     public static void main(String[] args) {
-        TreeNode root=new TreeNode(1);
-        root.left=new TreeNode(2);
-        root.right=new TreeNode(2);
-        root.left.left=new TreeNode(3);
-        root.left.right=new TreeNode(3);
-        root.left.left.left=new TreeNode(4);
-        root.left.left.right=new TreeNode(4);
+        TreeNode1 root=new TreeNode1(1);
+        root.left=new TreeNode1(2);
+        root.right=new TreeNode1(2);
+        root.left.left=new TreeNode1(3);
+        root.left.right=new TreeNode1(3);
+        root.left.left.left=new TreeNode1(4);
+        root.left.left.right=new TreeNode1(4);
         System.out.println(isBalanced(root));
     }
-    public static boolean isBalanced(TreeNode root) {
+    public static boolean isBalanced(TreeNode1 root) {
         return dfs(root)!=-1;
     }
-    public static int dfs(TreeNode node){
+    public static int dfs(TreeNode1 node){
         if(node==null){
             return 0;
         }
