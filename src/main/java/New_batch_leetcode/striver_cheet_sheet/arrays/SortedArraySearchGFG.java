@@ -1,4 +1,4 @@
-package New_batch_leetcode.striver_cheet_sheet.Arrays;
+package New_batch_leetcode.striver_cheet_sheet.arrays;
 
 public class SortedArraySearchGFG {
     public static void main(String[] args) {

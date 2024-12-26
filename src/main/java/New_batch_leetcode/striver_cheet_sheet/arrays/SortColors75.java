@@ -1,9 +1,6 @@
-package New_batch_leetcode.striver_cheet_sheet.Arrays;
+package New_batch_leetcode.striver_cheet_sheet.arrays;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class SortColors75 {
     public static void main(String[] args) {

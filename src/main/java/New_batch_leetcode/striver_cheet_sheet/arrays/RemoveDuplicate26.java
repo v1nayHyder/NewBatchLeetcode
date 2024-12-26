@@ -1,7 +1,4 @@
-package New_batch_leetcode.striver_cheet_sheet.Arrays;
-
-import java.util.Arrays;
-import java.util.HashSet;
+package New_batch_leetcode.striver_cheet_sheet.arrays;
 
 public class RemoveDuplicate26 {
     public static void main(String[] args) {

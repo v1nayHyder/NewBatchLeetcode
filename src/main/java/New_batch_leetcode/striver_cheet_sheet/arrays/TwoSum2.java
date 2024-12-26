@@ -1,4 +1,4 @@
-package New_batch_leetcode.striver_cheet_sheet.Arrays;
+package New_batch_leetcode.striver_cheet_sheet.arrays;
 
 import java.util.HashMap;
 import java.util.Map;

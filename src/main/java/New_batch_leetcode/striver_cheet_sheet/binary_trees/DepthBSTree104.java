@@ -44,11 +44,11 @@ public class DepthBSTree104 {
 //
 //    }
 }
-class TreeNode{
+class TreeNode4 {
        int val;
-       TreeNode1 left;
-       TreeNode1 right;
-       TreeNode(int val){
+       TreeNode4 left;
+       TreeNode4 right;
+       TreeNode4(int val){
            this.val=val;
            left=right=null;
 

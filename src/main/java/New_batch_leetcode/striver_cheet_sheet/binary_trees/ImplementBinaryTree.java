@@ -1,4 +1,4 @@
-package New_batch_leetcode.binary_trees;
+package New_batch_leetcode.striver_cheet_sheet.binary_trees;
 
 public class ImplementBinaryTree {
     class Node{

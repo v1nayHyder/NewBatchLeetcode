@@ -1,4 +1,4 @@
-package New_batch_leetcode.binary_trees;
+package New_batch_leetcode.striver_cheet_sheet.binary_trees;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -7,16 +7,16 @@ import java.util.Queue;
 
 
 public class LevelOrderTraversal {
-    public  static List<List<Integer>> levelOrder(TreeNode root) {
+    public  static List<List<Integer>> levelOrder(TreeNode4 root) {
         List<List<Integer>>list=new ArrayList<>();
-        if (root == null) return list;        Queue<TreeNode> queue=new LinkedList<>();
+        if (root == null) return list;        Queue<TreeNode4> queue=new LinkedList<>();
         queue.add(root);
         while(!queue.isEmpty()){
             List<Integer> val = new ArrayList<>();
             int size = queue.size();
             for (int i = 0; i < size; i++) {
-                TreeNode node = queue.poll();
-                val.add(node.data);
+                TreeNode4 node = queue.poll();
+                val.add(node.val);
 
                 // Enqueue left and right children if they exist
                 if (node.left != null) queue.add(node.left);
@@ -29,19 +29,19 @@ public class LevelOrderTraversal {
         return list;
     }
     public static void main(String[] args) {
-      TreeNode treeNode=new TreeNode(3);
-      treeNode.left=new TreeNode(9);
-      treeNode.right=new TreeNode(20);
-      treeNode.right.left=new TreeNode(15);
-      treeNode.right.right=new TreeNode(7);
+      TreeNode4 treeNode=new TreeNode4(3);
+      treeNode.left=new TreeNode4(9);
+      treeNode.right=new TreeNode4(20);
+      treeNode.right.left=new TreeNode4(15);
+      treeNode.right.right=new TreeNode4(7);
       List<List<Integer>> list=levelOrder(treeNode);
         System.out.println(list);
     }
 }
 class TreeNode{
     int data;
-    TreeNode left;
-    TreeNode right;
+    TreeNode4 left;
+    TreeNode4 right;
     TreeNode(int data){
         this.data=data;
         right=left=null;

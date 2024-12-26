@@ -1,7 +1,4 @@
-package New_batch_leetcode.striver_cheet_sheet.Arrays;
-
-import java.util.HashMap;
-import java.util.Map;
+package New_batch_leetcode.striver_cheet_sheet.arrays;
 
 public class MajorityEle169 {
     public static void main(String[] args) {
