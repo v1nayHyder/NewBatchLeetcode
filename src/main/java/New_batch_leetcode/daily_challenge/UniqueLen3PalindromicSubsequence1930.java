@@ -22,6 +22,8 @@ public class UniqueLen3PalindromicSubsequence1930 {
             }
             secondOccurrence.put(s.charAt(i),i);
         }
+        System.out.println(firstOccurrence);
+        System.out.println(secondOccurrence);
         int count=0;
         for (char ch:firstOccurrence.keySet()){
             int start=firstOccurrence.get(ch);
