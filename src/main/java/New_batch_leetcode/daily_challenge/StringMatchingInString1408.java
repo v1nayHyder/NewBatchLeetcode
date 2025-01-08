@@ -11,8 +11,8 @@ public class StringMatchingInString1408 {
         System.out.println(list);
     }
     public static List<String> stringMatching(String[] words) {
-        List<String> list = new ArrayList();
-        if (words.length == 1 || words == null) {
+        List<String> list = new ArrayList<>();
+        if (words.length == 1) {
             return list;
         }
 
